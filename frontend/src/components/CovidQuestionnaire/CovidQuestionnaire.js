@@ -1,6 +1,7 @@
 import React from 'react';
 import { Formik } from 'formik';
 import CovidQuestionnaireFormView from './CovidQuestionnaireFormView';
+import { respondToQuestionnaire } from '../../actions/covidQuestionnaireActions';
 
 const CovidQuestionnaire = () => {
     return (
@@ -12,7 +13,7 @@ const CovidQuestionnaire = () => {
                 }}
                 onSubmit={(values, { setSubmitting }) => {
                     setSubmitting(false);
-                    console.log(values);
+                    respondToQuestionnaire(values);
                 }}
             >
                 {(props) => <CovidQuestionnaireFormView {...props} />}
