@@ -8,6 +8,7 @@ const CovidQuestionnaireFormView = ({
     <form className="covid-questionnaire-form" autoComplete="off">
 
         <div className="form-control">
+
             <label htmlFor="questionOne">Do you have a high temperature</label>
             <select
                 name="questionOne"

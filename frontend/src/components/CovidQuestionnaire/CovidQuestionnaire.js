@@ -13,6 +13,7 @@ const CovidQuestionnaire = () => {
                 }}
                 onSubmit={(values, { setSubmitting }) => {
                     setSubmitting(false);
+                    console.log(values)
                     respondToQuestionnaire(values);
                 }}
             >
