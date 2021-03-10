@@ -1,0 +1,11 @@
+.covid-questionnaire-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    .question {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
